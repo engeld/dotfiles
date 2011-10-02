@@ -13,7 +13,7 @@ Just run the following script, which can be found in the same git-repo as this R
 ./deploy_dotfiles
 ```
 
-The script does the following:
+The script does the following:  
 * Checks if the dotfiles are already in place
     * If so, abort and print error message (TODO: compare them and suggest a merge - but first decide how to compare them)
     * OR, if the script is running with an "-f" parameter, then rename the already existing files with an suffix called ".old"
