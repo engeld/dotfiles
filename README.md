@@ -11,7 +11,7 @@ How to deploy the dotfiles?
 Just run the following script, which can be found in the same git-repo as this README:
 ```bash
 ./deploy_dotfiles
-''''
+```
 
 The script does the following:
 * Checks if the dotfiles are already in place
