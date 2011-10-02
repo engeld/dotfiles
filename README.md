@@ -9,7 +9,7 @@ Content:
 How to deploy the dotfiles?
 ---------------------------
 Just run the following script, which can be found in the same git-repo as this README:
-''''Shell
+```bash
 ./deploy_dotfiles
 ''''
 
