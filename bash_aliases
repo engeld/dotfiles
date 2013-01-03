@@ -7,10 +7,12 @@ alias mv='mv -iv'
 alias cp='cp -iv'
  
 # Add some easy shortcuts for formatted directory listings.
-alias ll='ls -lF'
-alias la='ls -alF'
-alias ls='ls -F'
-alias l.='ls -dF .[a-zA-Z0-9]*' #only show dotfiles
+alias ll='ls -lhF'
+alias la='ls -ahlF'
+alias ls='ls -hF'
+alias l.='ls -hdF .[a-zA-Z0-9]*' #only show dotfiles
+alias lt='ls -lhaptr' #oldest first sort
+alias labc='ls -lhap' #alphabetical sort
 
 # Add some fixes for common typos.
 alias cd..='cd ..'
@@ -32,6 +34,7 @@ alias screen-retach='screen -raAd'
 alias lsscr='screen -list'
 alias cal='cal -m3'
 alias today='date +"%A, %B %-d, %Y"'
+alias path='echo -e ${PATH//:/\\n}'
 
 # Make grep more user friendly by highlighting matches
 # and exclude grepping through .svn folders.
