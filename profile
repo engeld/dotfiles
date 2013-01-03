@@ -37,6 +37,7 @@ PATH=$LOCAL_BIN_PATH:$HOME_BIN_PATH:$ZEND_BIN_PATH:$PATH
 EDITOR=vim
 VISUAL=vim
 #LESSEDIT=
+#PAGER=
 
 # ============ Exports (aka activate those customs env variables)  =============
 export PATH
