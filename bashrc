@@ -1,4 +1,8 @@
-echo "reading ~/.bashrc"
+# ====================================================================
+# Autor: Dana Engel (engeld)
+# Descr: This .bashrc-file is read whenever a sub-shell is started
+# ====================================================================
+#echo "reading ~/.bashrc" # for debugging purposes
 
 # Enable programmable completion features.
 if [ -f /etc/bash_completion ]; then
@@ -19,9 +23,6 @@ PS1="\[\e[36;1m\]\h:\[\e[32;1m\]\w$ \[\e[0m\]"
 export HISTCONTROL=ignoredups # avoid succesive dupes in bash history
 shopt -s histappend # append cmds to bash history instead of overwrite
 PROMPT_COMMAND='history -a' # appends cmds to history every time a promt is shown
-
-# ========== Exports ============== 
-export EDITOR=vim
 
 # Add bash aliases.
 if [ -f ~/.bash_aliases ]; then
