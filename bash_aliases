@@ -7,8 +7,8 @@ alias mv='mv -iv'
 alias cp='cp -iv'
  
 # Add some easy shortcuts for formatted directory listings and add a touch of color.
-alias ll='ls -lF --color=auto'
-alias la='ls -alF --color=auto'
+alias ll='ls -lF'
+alias la='ls -alF'
 alias ls='ls -F'
  
 # Make grep more user friendly by highlighting matches
