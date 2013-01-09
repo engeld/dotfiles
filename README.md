@@ -2,7 +2,7 @@ Using engeld/dotfiles
 ======================
 
 ## Install ##
-On a new computer, simply *clone* the repository.
+On a new computer, simply *clone* the repository.   
 `git clone git@bitbucket.org:engeld/dotfiles.git .dotfiles`
 
 
