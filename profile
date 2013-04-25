@@ -13,7 +13,7 @@ ZEND_MYSQL_BIN_PATH=/usr/local/zend/mysql/bin
 
 # SYS
 PKG_CONFIG_PATH=$HOME/usr/lib/pkgconfig:$PKG_CONFIG_PATH
-LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/usr/lib
+#LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/usr/lib
 LD_RUN_PATH=$LD_RUN_PATH:~/usr/lib
 
 # Python
