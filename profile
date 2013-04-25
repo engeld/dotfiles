@@ -22,7 +22,7 @@ LD_RUN_PATH=$LD_RUN_PATH:~/usr/lib
 
 # Java
 #CLASSPATH=$CLASSPATH:~/foo/bar.jar
-#JAVA_HOME=
+JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 #ANT_HOME=
 #TOMCAT_HOME=
 
@@ -46,3 +46,4 @@ export LD_LIBRARY_PATH
 export LD_RUN_PATH
 export EDITOR
 export VISUAL
+export JAVA_HOME
