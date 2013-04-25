@@ -75,3 +75,5 @@ fi
 if [ -f ~/.bash_functions ]; then
     source ~/.bash_functions
 fi
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
