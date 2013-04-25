@@ -1,5 +1,5 @@
 # why this file? see http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html
-#echo "reading ~/.bash_profile" #for debugging purposes
+echo "reading ~/.bash_profile" #for debugging purposes
 
 # Load .profile, containing login, non-bash related initializations.
 if [ -f ~/.profile ]; then

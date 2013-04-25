@@ -2,17 +2,12 @@
 # Autor: Dana Engel (engeld)
 # Descr: This .bashrc-file is read whenever a sub-shell is started
 # ====================================================================
-#echo "reading ~/.bashrc" # for debugging purposes
+echo "reading ~/.bashrc" # for debugging purposes
 
 # Enable programmable completion features.
 if [ -f /etc/bash_completion ]; then
     source /etc/bash_completion
 fi
-
-# Just for funsies: start every term with a quote
-#if [ -f `which fortune` ]; then
-    #fortune
-#fi
 
 # ==================== PROMT ================================= 
 function prompt_command {
