@@ -13,5 +13,5 @@ Link the dotfile from the repo to the homedir: `ln -s ~/.dotfiles/dotfile ~/.dot
 tl;dr: depending on login-shell/non-login-shell, different rc-files are loaded
 
 ## Pitfalls's (AKA 'Things that may or may not work)  ##
-* if the repository-folder is moved, the symlinks may not work anymore?
+* if the repository-folder is moved, the symlinks don't work anymore!
 * there could be some pitfalls in regards to rights/permissions..?
