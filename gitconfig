@@ -1,3 +1,9 @@
 [user]
 	name = Dana Engel
 	email = engel.dana.mail@gmail.com
+[color]
+	ui = true
+[alias]
+	co = checkout
+[core]
+	editor = subl -w
