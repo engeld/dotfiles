@@ -2,11 +2,17 @@
 # Autor: Dana Engel (engeld)
 # Descr: This .bashrc-file is read whenever a sub-shell is started
 # ====================================================================
-#echo "reading ~/.bashrc" # for debugging purposes
+echo "reading ~/.bashrc" # for debugging purposes
 
 # Enable programmable completion features.
 if [ -f /etc/bash_completion ]; then
     source /etc/bash_completion
+    if [ -f $(brew --prefix)/Library/Contributions/brew_bash_completion.sh ]; then
+        source `brew --prefix`/Library/Contributions/brew_bash_completion.sh
+    fi
+    if [ -f $(brew --prefix)/etc/bash_completion ]; then
+        . $(brew --prefix)/etc/bash_completion
+    fi
 fi
 
 # Just for funsies: start every term with a quote
@@ -75,3 +81,9 @@ fi
 if [ -f ~/.bash_functions ]; then
     source ~/.bash_functions
 fi
+
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
