@@ -29,7 +29,7 @@ RUBYGEMS_GLOBAL_PATH=${HOME}/.rvm/gems/${RUBY_VERSION}@global/bin
 
 # Java
 #CLASSPATH=$CLASSPATH:~/foo/bar.jar
-#JAVA_HOME=
+JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 #ANT_HOME=
 #TOMCAT_HOME=
 
@@ -54,6 +54,7 @@ export LD_LIBRARY_PATH
 export LD_RUN_PATH
 export EDITOR
 export VISUAL
+export JAVA_HOME
 
 # source rvm
 if test -f ~/.rvm/scripts/rvm; then

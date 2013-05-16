@@ -15,12 +15,7 @@ if [ -f /etc/bash_completion ]; then
     fi
 fi
 
-# Just for funsies: start every term with a quote
-#if [ -f `which fortune` ]; then
-    #fortune
-#fi
-
-# ==================== PROMT ================================= 
+# ==================== PROMT =================================
 function prompt_command {
   TERMWIDTH=${COLUMNS}  # Find the width of the prompt
 
@@ -54,7 +49,7 @@ NO_COLOURS='\[\033[0m\]'
 
 # And now change PS1 & PS2 to it ---------------------------------------------
 if [ ! -n "$SSH_TTY" ]; then                # local login
-    PS1="${DARK_GREY}┌--[${LIGHT_GREY} \u@\H:\l ${DARK_GREY}] \${fill} [${LIGHT_GREY} \T ${DARK_GREY}] --┐\n└->[${LIGHT_RED} \w ${DARK_GREY}] \\$ ${NO_COLOURS}" 
+    PS1="${DARK_GREY}┌--[${LIGHT_GREY} \u@\H:\l ${DARK_GREY}] \${fill} [${LIGHT_GREY} \T ${DARK_GREY}] --┐\n└->[${LIGHT_RED} \w ${DARK_GREY}] \\$ ${NO_COLOURS}"
     export PS1
 else                                        #ssh login
     export PS1="\u@\h:\W "
@@ -84,6 +79,5 @@ fi
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
+### add Heroku and RVM's Ruby to the path
+export PATH="/usr/local/heroku/bin:$PATH:$HOME/.rvm/bin"
