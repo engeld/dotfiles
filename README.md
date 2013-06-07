@@ -13,9 +13,9 @@ Link the dotfile from the repo to the homedir: `ln -s ~/.dotfiles/dotfile ~/.dot
 see [this link for the whole story][1]
 
 To sum this up:  
- - `.bash_profile` is executed for *login shells*
- - `.bashrc` is executed for interactive non-login shells
- - `.bash_alias` is invoked by my .bashrc
+ - `.bash_profile` is executed for *login shells*  
+ - `.bashrc` is executed for interactive non-login shells  
+ - `.bash_alias` is invoked by my .bashrc  
  - `.bash_functions` is invoked by my .bashrc as well
 
 tl;dr: depending on login-shell/non-login-shell, different rc-files are loaded
