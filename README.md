@@ -12,7 +12,7 @@ Link the dotfile from the repo to the homedir: `ln -s ~/.dotfiles/dotfile ~/.dot
 ### .bashrc? .bash_profile? .profile? WTF, are you kidding me? ###
 see [this link for the whole story][1]
 
-To sum this up:
+To sum this up:  
 1. `.bash_profile` is executed for *login shells*
 2. `.bashrc` is executed for interactive non-login shells
 3. `.bash_alias` is invoked by my .bashrc
