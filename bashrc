@@ -7,9 +7,15 @@ echo "reading ~/.bashrc" # for debugging purposes
 # Enable programmable completion features.
 if [ -f /etc/bash_completion ]; then
     source /etc/bash_completion
+    if [ -f $(brew --prefix)/Library/Contributions/brew_bash_completion.sh ]; then
+        source `brew --prefix`/Library/Contributions/brew_bash_completion.sh
+    fi
+    if [ -f $(brew --prefix)/etc/bash_completion ]; then
+        . $(brew --prefix)/etc/bash_completion
+    fi
 fi
 
-# ==================== PROMT ================================= 
+# ==================== PROMT =================================
 function prompt_command {
   TERMWIDTH=${COLUMNS}  # Find the width of the prompt
 
@@ -43,7 +49,7 @@ NO_COLOURS='\[\033[0m\]'
 
 # And now change PS1 & PS2 to it ---------------------------------------------
 if [ ! -n "$SSH_TTY" ]; then                # local login
-    PS1="${DARK_GREY}┌--[${LIGHT_GREY} \u@\H:\l ${DARK_GREY}] \${fill} [${LIGHT_GREY} \T ${DARK_GREY}] --┐\n└->[${LIGHT_RED} \w ${DARK_GREY}] \\$ ${NO_COLOURS}" 
+    PS1="${DARK_GREY}┌--[${LIGHT_GREY} \u@\H:\l ${DARK_GREY}] \${fill} [${LIGHT_GREY} \T ${DARK_GREY}] --┐\n└->[${LIGHT_RED} \w ${DARK_GREY}] \\$ ${NO_COLOURS}"
     export PS1
 else                                        #ssh login
     export PS1="\u@\h:\W "
@@ -71,4 +77,7 @@ if [ -f ~/.bash_functions ]; then
     source ~/.bash_functions
 fi
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
+### add Heroku and RVM's Ruby to the path
+export PATH="/usr/local/heroku/bin:$PATH:$HOME/.rvm/bin"

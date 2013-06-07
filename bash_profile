@@ -5,8 +5,8 @@ echo "reading ~/.bash_profile" #for debugging purposes
 if [ -f ~/.profile ]; then
   source ~/.profile
 fi
- 
-# Load .bashrc, containing non-login related bash initializations.
+
+# Load .bashrc, containing non-login related (eg do not print there any output!)  bash initializations.
 if [ -f ~/.bashrc ]; then
   source ~/.bashrc
 fi
