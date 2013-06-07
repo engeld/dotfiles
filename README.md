@@ -14,9 +14,9 @@ see [this link for the whole story][1]
 
 To sum this up:
 1. `.bash_profile` is executed for *login shells*
-1. `.bashrc` is executed for interactive non-login shells
-1. `.bash_alias` is invoked by my .bashrc
-1. `.bash_functions` is invoked by my .bashrc as well
+2. `.bashrc` is executed for interactive non-login shells
+3. `.bash_alias` is invoked by my .bashrc
+4. `.bash_functions` is invoked by my .bashrc as well
 
 tl;dr: depending on login-shell/non-login-shell, different rc-files are loaded
 
