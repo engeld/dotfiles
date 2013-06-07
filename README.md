@@ -10,6 +10,14 @@ Add a new dotfile to the repository: `mv ~/.dotfile ~/.dotfiles/dotfile`
 Link the dotfile from the repo to the homedir: `ln -s ~/.dotfiles/dotfile ~/.dotfile`
 
 ### .bashrc? .bash_profile? .profile? WTF, are you kidding me? ###
+see [this link for the whole story](http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html).
+
+To sum this up:
+ 1 ''.bash_profile'' is executed for //login shells//
+ 1 ''.bashrc'' is executed for //interactive non-login shells//
+ 1 ''.bash_alias'' is invoked by my ''.bashrc''
+ 1 ''.bash_functions' is invoked by my ''.bashrc'' as well
+
 tl;dr: depending on login-shell/non-login-shell, different rc-files are loaded
 
 ## Pitfalls's (AKA 'Things that may or may not work)  ##
