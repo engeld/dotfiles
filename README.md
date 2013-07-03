@@ -1,10 +1,19 @@
 Using engeld/dotfiles
 ======================
+In this repository are my dotfiles; pretty standard stuff I guess.
+This file outlines some instructions about setting them up, and shines 
+light on some of the pitfalls and special files which I use.
 
-## Install ##
+
+## Installation ##
 On a new computer, simply *clone* the repository.   
-`git clone git@bitbucket.org:engeld/dotfiles.git .dotfiles`
 
+    $ cd ~
+    $ git clone git@bitbucket.org:engeld/dotfiles.git .dotfiles
+    $ ln -s ~/.dotfiles/bashrc ~/.bashrc
+    $ ln -s ~/.dotfiles/profile ~/.profile
+    $ ln -s ~/.dotfiles/bash_profile ~/.bash_profile
+    //and so on..//
 
 Add a new dotfile to the repository: `mv ~/.dotfile ~/.dotfiles/dotfile`  
 Link the dotfile from the repo to the homedir: `ln -s ~/.dotfiles/dotfile ~/.dotfile`
