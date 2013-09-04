@@ -18,6 +18,9 @@ On a new computer, simply *clone* the repository.
 Add a new dotfile to the repository: `mv ~/.dotfile ~/.dotfiles/dotfile`  
 Link the dotfile from the repo to the homedir: `ln -s ~/.dotfiles/dotfile ~/.dotfile`
 
+### My current promt
+![Current Promt](http://i.imgur.com/UDXdZds.png)
+
 ### .bashrc? .bash_profile? .profile? WTF, are you kidding me? ###
 see [this link for the whole story][1]
 
@@ -31,6 +34,7 @@ tl;dr: depending on login-shell/non-login-shell, different rc-files are loaded
 
 ## Pitfalls's (AKA 'Things that may or may not work)  ##
 * if the repository-folder is moved, the symlinks don't work anymore!
+ * Solution: don't move the repo-folder!
 * there could be some pitfalls in regards to rights/permissions..?
 
 [1]: http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html
