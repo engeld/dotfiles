@@ -9,7 +9,7 @@ light on some of the pitfalls and special files which I use.
 On a new computer, simply *clone* the repository.   
 
     $ cd ~
-    $ git clone git@bitbucket.org:engeld/dotfiles.git .dotfiles
+    $ git clone git@github.com:engeld/dotfiles.git .dotfiles
     $ ln -s ~/.dotfiles/bashrc ~/.bashrc
     $ ln -s ~/.dotfiles/profile ~/.profile
     $ ln -s ~/.dotfiles/bash_profile ~/.bash_profile
@@ -27,10 +27,10 @@ see [this link for the whole story][1]
 To sum this up:  
  - `.bash_profile` is executed for *login shells*  
  - `.bashrc` is executed for interactive non-login shells  
- - `.bash_alias` is invoked by my .bashrc  
- - `.bash_functions` is invoked by my .bashrc as well
+ - `.bash_alias` is invoked by my .bashrc and contains all my aliases
+ - `.bash_functions` is invoked by my .bashrc as well and contains all my funky functions
 
-tl;dr: depending on login-shell/non-login-shell, different rc-files are loaded
+tl;dr: depending on login-shell/non-login-shell, different config-files are loaded
 
 ## Pitfalls's (AKA 'Things that may or may not work)  ##
 * if the repository-folder is moved, the symlinks don't work anymore!
