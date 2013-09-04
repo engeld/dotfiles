@@ -18,6 +18,9 @@ On a new computer, simply *clone* the repository.
 Add a new dotfile to the repository: `mv ~/.dotfile ~/.dotfiles/dotfile`  
 Link the dotfile from the repo to the homedir: `ln -s ~/.dotfiles/dotfile ~/.dotfile`
 
+### My current promt
+![Current Promt](http://i.imgur.com/UDXdZds.png)
+
 ### .bashrc? .bash_profile? .profile? WTF, are you kidding me? ###
 see [this link for the whole story][1]
 
