@@ -1,3 +1,6 @@
+[user]
+	name = Dana Engel
+	email = engel.dana.mail@gmail.com
 [alias]
 	# View the SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph
@@ -28,7 +31,6 @@
 [apply]
 	# Detect whitespace errors when applying a patch
 	whitespace = fix
-
 [color]
 	# Use colors in Git commands that are capable of colored output when outputting to the terminal
 	ui = auto
@@ -49,12 +51,6 @@
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
 	tool = Kaleidoscope
-
-[user]
-	name = Dana Engel
-	email = engel.dana.mail@gmail.com
-[color]
-	ui = true
 [alias]
 	co = checkout
 [core]
