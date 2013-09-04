@@ -31,6 +31,7 @@ tl;dr: depending on login-shell/non-login-shell, different rc-files are loaded
 
 ## Pitfalls's (AKA 'Things that may or may not work)  ##
 * if the repository-folder is moved, the symlinks don't work anymore!
+ * Solution: don't move the repo-folder!
 * there could be some pitfalls in regards to rights/permissions..?
 
 [1]: http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html
