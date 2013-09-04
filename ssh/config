@@ -2,18 +2,3 @@
 Host uberspace
     Hostname eridanus.uberspace.de
     User engeld
-
-## Work
-Host daneb
-    HostName daneb.inno.ch
-    User root
-
-Host polar
-    HostName polar.inno.ch
-    User root
-
-Host sirius
-    HostName sirius.inno.ch
-    User root
-
-### Customer
