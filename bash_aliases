@@ -52,7 +52,6 @@ alias mount='mount |column -t'
 alias screen='screen -T xterm-256color -xR'
 alias screen-retach='screen -raAd'
 alias lsscr='screen -list'
-alias cal='cal -m3'
 alias today='date +"%A, %B %-d, %Y"'
 alias path='echo -e ${PATH//:/\\n}'
 
