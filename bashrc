@@ -11,7 +11,10 @@ if [ -f /etc/bash_completion ]; then
         source `brew --prefix`/Library/Contributions/brew_bash_completion.sh
     fi
     if [ -f $(brew --prefix)/etc/bash_completion ]; then
-        . $(brew --prefix)/etc/bash_completion
+        source $(brew --prefix)/etc/bash_completion
+    fi
+    if [ -f `brew --prefix`/etc/bash_completion.d/rails.bash ]; then
+        source `brew --prefix`/etc/bash_completion.d/rails.bash
     fi
 fi
 
