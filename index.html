@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Dotfiles by engeld</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Dotfiles</h1>
+        <p>my personal dotfiles</p>
+
+        <p class="view"><a href="https://github.com/engeld/dotfiles">View the Project on GitHub <small>engeld/dotfiles</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/engeld/dotfiles/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/engeld/dotfiles/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/engeld/dotfiles">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="using-engelddotfiles" class="anchor" href="#using-engelddotfiles"><span class="octicon octicon-link"></span></a>Using engeld/dotfiles</h1>
+
+<p>In this repository are my dotfiles; pretty standard stuff I guess.
+This file outlines some instructions about setting them up, and shines 
+light on some of the pitfalls and special files which I use.</p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>On a new computer, simply <em>clone</em> the repository.   </p>
+
+<pre><code>$ cd ~
+$ git clone git@github.com:engeld/dotfiles.git .dotfiles
+$ ln -s ~/.dotfiles/bashrc ~/.bashrc
+$ ln -s ~/.dotfiles/profile ~/.profile
+$ ln -s ~/.dotfiles/bash_profile ~/.bash_profile
+//and so on..//
+</code></pre>
+
+<p>Add a new dotfile to the repository: <code>mv ~/.dotfile ~/.dotfiles/dotfile</code><br>
+Link the dotfile from the repo to the homedir: <code>ln -s ~/.dotfiles/dotfile ~/.dotfile</code></p>
+
+<h3>
+<a name="my-current-promt" class="anchor" href="#my-current-promt"><span class="octicon octicon-link"></span></a>My current promt</h3>
+
+<p><img src="http://i.imgur.com/UDXdZds.png" alt="Current Promt"></p>
+
+<h3>
+<a name="bashrc-bash_profile-profile-wtf-are-you-kidding-me" class="anchor" href="#bashrc-bash_profile-profile-wtf-are-you-kidding-me"><span class="octicon octicon-link"></span></a>.bashrc? .bash_profile? .profile? WTF, are you kidding me?</h3>
+
+<p>see <a href="http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html">this link for the whole story</a></p>
+
+<p>To sum this up:  </p>
+
+<ul>
+<li>
+<code>.bash_profile</code> is executed for <em>login shells</em><br>
+</li>
+<li>
+<code>.bashrc</code> is executed for interactive non-login shells<br>
+</li>
+<li>
+<code>.bash_alias</code> is invoked by my .bashrc and contains all my aliases</li>
+<li>
+<code>.bash_functions</code> is invoked by my .bashrc as well and contains all my funky functions</li>
+</ul><p>tl;dr: depending on login-shell/non-login-shell, different config-files are loaded</p>
+
+<h2>
+<a name="pitfallss-aka-things-that-may-or-may-not-work" class="anchor" href="#pitfallss-aka-things-that-may-or-may-not-work"><span class="octicon octicon-link"></span></a>Pitfalls's (AKA 'Things that may or may not work)</h2>
+
+<ul>
+<li>if the repository-folder is moved, the symlinks don't work anymore!
+
+<ul>
+<li>Solution: don't move the repo-folder!</li>
+</ul>
+</li>
+<li>there could be some pitfalls in regards to rights/permissions..?</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/engeld">engeld</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
