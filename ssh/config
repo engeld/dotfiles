@@ -1,4 +1,33 @@
 ## Privat
-Host uberspace
+Host uberspace engeld
     Hostname eridanus.uberspace.de
     User engeld
+
+Host heaven prod
+  HostName pegasus.uberspace.de
+  User heaven
+
+Host hell dev
+  HostName pegasus.uberspace.de
+  User hell
+
+Host build
+  HostName fornax.uberspace.de
+  User build
+
+Host cyane # my digitalocean droplet
+  HostName 31.139.30.158
+  User root
+
+Host nyx	# synology diskstation
+  HostName 192.168.1.51
+  User root
+
+Host apollo 	# synology diskstation
+  HostName 192.168.1.52  
+  User root
+
+Host joxer	# my iphone 3g
+
+
+
