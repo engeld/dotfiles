@@ -1,45 +1,60 @@
 [user]
 	name = Dana Engel
 	email = engel.dana.mail@gmail.com
+[core]
+	pager = less -FRSX
+	editor = vim -f
+	whitespace = fix,-intent-with-non-tabs-tailing-space,cr-at-eol
+	autocrlf = input
+	safecrlf = true
 [alias]
-	# View the SHA, description, and history graph of the latest 20 commits
-	l = log --pretty=oneline -n 20 --graph
-	lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
-	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
-	lg = !"git lg1"
-	# View the current working tree status using the short format
-	s = status -s
-	# Show the diff between the latest commit and the current state
-	d = !"git diff --patch-with-stat"
-	# `git di $number` shows the diff between the state `$number` revisions ago and the current state
-	di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
-	ca = !git add -A && git commit -av		# commit all changes
+	b = browse
+
+	s = status -s					# view the current working tree status using the short format
+	c = clone --recursive				# clone a repository including all submodules
+	co = checkout
 	go = checkout -B				# switch to branch, creating if necessary
 	tags = tag -l 					# show verbose output about tags
 	branches = branch -a 				# show verbose output about branches
-	remotes = remote -v				# show verbose output about remotes
-	reb = "!r() { git rebase -i HEAD~$1; }; r"	# interactive rebase with the given number of latest commits
-	c = clone --recursive				# clone a repository including all submodules
-	# Pull in remote changes for the current repository and all its submodules
-	p = !"git pull; git submodule foreach git pull origin master"
-	# Credit an author on the latest commit
-	credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
-
+	remotes = remote -v				# show verbose output about remotes	
 	list-remotes  = remote -v
 	list-branches = branch -a
 	list-tags     = tag -l 
+
+	l = log --pretty=oneline -n 20 --graph		# view the SHA, description, and history graph of the latest 20 commits
+	lg = !"git lg1"
+	lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all	
+	
+	d = !"git diff --patch-with-stat"		# show the diff between the latest commit and the current state
+	ca = !git add -A && git commit -av		# commit all changes
+	
+
+	## Functions!
+	# Credit an author on the latest commit
+	credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
+	# Pull in remote changes for the current repository and all its submodules
+	p = !"git pull; git submodule foreach git pull origin master"
+	# interactive rebase with the given number of latest commits
+	reb = "!r() { git rebase -i HEAD~$1; }; r"
+	# `git di $number` shows the diff between the state `$number` revisions ago and the current state
+	di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
 [apply]
 	# Detect whitespace errors when applying a patch
 	whitespace = fix
 [color]
-	# Use colors in Git commands that are capable of colored output when outputting to the terminal
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
 	ui = auto
+	pager = true	
 [color "branch"]
 	current = yellow reverse
 	local = yellow
 	remote = green
 [color "diff"]
-	meta = yellow bold
+	meta = blue
 	frag = magenta bold
 	old = red bold
 	new = green bold
@@ -50,15 +65,10 @@
 [merge]
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
-	tool = Kaleidoscope
-[alias]
-	co = checkout
-[core]
-	editor = vim
-	autocrlf = input
+	summary = true
 [difftool]
-	prompt = false
+	prompt = true
 [mergetool]
-	prompt = false
+	prompt = true
 [push]
 	default = simple
