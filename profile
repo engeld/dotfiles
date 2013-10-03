@@ -5,8 +5,9 @@
 # ====================================================================
 echo "reading ~/.profile" # for debugging purposes
 
-# PREFIX for local, non-root installations
-PREFIX=$HOME/.local
+PREFIX=$HOME/.local     # PREFIX for local, non-root installation
+BREW_BIN=`which brew`  # PATH to brew (because PATH is not yet corrected)
+BREW_PREFIX="${BREW_BIN} --prefix"
 
 # ============ Customize ALL THE ENVIRONMENT VARIABLES =============
 # ZEND
@@ -23,6 +24,7 @@ PREFIX=$HOME/.local
 # Python
 #PYTHONPATH=$PYTHONPATH:${PREFIX}/slippenspythonlib
 #PYTHONPATH=$PYTHONPATH:${PREFIX}/lib/python2.5/site-packages
+PYTHONPATH=${BREW_PREFIX}/lib/python2.7/site-packages
 
 # Ruby / RVM
 RUBY_VERSION=ruby-1.9.3-p327
@@ -60,6 +62,7 @@ export LD_RUN_PATH
 export EDITOR
 export VISUAL
 export JAVA_HOME
+export PYTHONPATH
 
 # source rvm
 # FIXME: is this the correct way/file to do this?
