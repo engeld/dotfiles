@@ -22,8 +22,6 @@ BREW_PREFIX="${BREW_BIN} --prefix"
 #LD_RUN_PATH=$LD_RUN_PATH:${PREFIX}/lib
 
 # Python
-#PYTHONPATH=$PYTHONPATH:${PREFIX}/slippenspythonlib
-#PYTHONPATH=$PYTHONPATH:${PREFIX}/lib/python2.5/site-packages
 PYTHONPATH=${BREW_PREFIX}/lib/python2.7/site-packages
 
 # Ruby / RVM
