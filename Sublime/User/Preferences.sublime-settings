@@ -1,12 +1,15 @@
-// Settings in here override those in "Default/Preferences.sublime-settings",
-// and are overridden in turn by file type specific settings.
 {
-    // UI
-    "draw_white_space": "all",	// always show whitespace/tabs
-    "bold_folder_labels": true,	// show folders in sidebar in bold
+  // UI
+  "color_scheme": "Packages/RailsCasts Colour Scheme/RailsCastsColorScheme.tmTheme",
+  "draw_white_space": "all",
+  "bold_folder_labels": true,
 
-    // App behaviour
-    "hot_exit": false,			// disable 'hot exit'
-    "remember_open_files": false,
-    "open_files_in_new_window": false
+  // App behaviour
+  "hot_exit": false,
+  "remember_open_files": false,
+  "open_files_in_new_window": false,
+  // -- tab/space handling
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true
 }
