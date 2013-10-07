@@ -18,6 +18,13 @@ On a new computer, simply *clone* the repository.
 Add a new dotfile to the repository: `mv ~/.dotfile ~/.dotfiles/dotfile`  
 Link the dotfile from the repo to the homedir: `ln -s ~/.dotfiles/dotfile ~/.dotfile`
 
+### Installation of Sublime-Config ###
+*Make sure you have your old config backed up because this will replace it*
+
+    $ cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+    $ rm -r User
+    $ ln -s ~/.dotfiles/Sublime/User
+
 ### My current promt
 ![Current Promt](http://i.imgur.com/UDXdZds.png)
 
