@@ -8,6 +8,7 @@
   "hot_exit": false,
   "remember_open_files": false,
   "open_files_in_new_window": false,
+  "ensure_newline_at_eof_on_save": true,
   // -- tab/space handling
   "tab_size": 2,
   "translate_tabs_to_spaces": true,

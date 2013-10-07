@@ -1,0 +1,22 @@
+{
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Alignment",
+		"AutoFileName",
+		"DocBlockr",
+		"Dotfiles Syntax Highlighting",
+		"JsFormat",
+		"LESS",
+		"MacTerminal",
+		"Oblivion Color Scheme",
+		"Phpcs",
+		"Pretty JSON",
+		"RailsCasts Colour Scheme",
+		"RubyTest",
+		"Sass",
+		"SideBarEnhancements",
+		"sublimelint",
+		"Tag"
+	]
+}
