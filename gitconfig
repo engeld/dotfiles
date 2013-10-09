@@ -20,6 +20,7 @@
 	list-remotes  = remote -v
 	list-branches = branch -a
 	list-tags     = tag -l 
+    list-unpushed = log origin/master..HEAD
 
 	l = log --pretty=oneline -n 20 --graph		# view the SHA, description, and history graph of the latest 20 commits
 	lg = !"git lg1"
@@ -29,7 +30,6 @@
 	d = !"git diff --patch-with-stat"		# show the diff between the latest commit and the current state
 	ca = !git add -A && git commit -av		# commit all changes
 	
-
 	## Functions!
 	# Credit an author on the latest commit
 	credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
