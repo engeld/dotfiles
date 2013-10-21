@@ -5,17 +5,20 @@
 echo "reading ~/.bashrc" # for debugging purposes
 
 # Enable programmable completion features.
-if [ -f /etc/bash_completion ]; then
-    source /etc/bash_completion
-    if [ -f $(brew --prefix)/Library/Contributions/brew_bash_completion.sh ]; then
-        source `brew --prefix`/Library/Contributions/brew_bash_completion.sh
-    fi
-    if [ -f $(brew --prefix)/etc/bash_completion ]; then
-        source $(brew --prefix)/etc/bash_completion
-    fi
-    if [ -f `brew --prefix`/etc/bash_completion.d/rails.bash ]; then
-        source `brew --prefix`/etc/bash_completion.d/rails.bash
-    fi
+if [ -f $(brew --prefix)/Library/Contributions/brew_bash_completion.sh ]; then
+    source `brew --prefix`/Library/Contributions/brew_bash_completion.sh
+fi
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    source $(brew --prefix)/etc/bash_completion
+fi
+if [ -f `brew --prefix`/etc/bash_completion.d/rails.bash ]; then
+    source `brew --prefix`/etc/bash_completion.d/rails.bash
+fi
+if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
+    source `brew --prefix`/etc/bash_completion.d/git-completion.bash
+fi
+if [ -f `brew --prefix`/etc/bash_completion.d/tmux ]; then 
+    source `brew --prefix`/etc/bash_completion.d/tmux
 fi
 
 # ============ History ===============
