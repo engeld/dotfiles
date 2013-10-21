@@ -12,6 +12,8 @@ alias ls='ls -hF'
 alias l.='ls -hdF .[a-zA-Z0-9]*' #only show dotfiles
 alias lt='ls -lhaptr' #oldest first sort
 alias labc='ls -lhap' #alphabetical sort
+alias l='clear && pwd && ls -FGl'
+alias u='cd .. && l'
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
