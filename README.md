@@ -4,6 +4,7 @@ In this repository are my dotfiles; pretty standard stuff I guess.
 This file outlines some instructions about setting them up, and shines 
 light on some of the pitfalls and special files which I use.
 
+(I currently use those dotfiles on my Mac, it may not work on other OS'es)
 
 ## Installation ##
 On a new computer, simply *clone* the repository.   
