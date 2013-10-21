@@ -11,7 +11,7 @@ BREW_PREFIX="${BREW_BIN} --prefix"
 
 # ============ Customize ALL THE ENVIRONMENT VARIABLES =============
 # ZEND
-# TODO: check if zend is even installed before setting those variables
+# TODO: check if zend is even installed before setting those variables (is now issue #4)
 #ZEND_BIN_PATH=/usr/local/zend/bin
 #ZEND_APACHE_BIN_PATH=/usr/local/zend/apache2/bin
 #ZEND_MYSQL_BIN_PATH=/usr/local/zend/mysql/bin
@@ -31,7 +31,7 @@ RUBY_PATH=${HOME}/.rvm/rubies/${RUBY_VERSION}/bin
 RUBYGEMS_PATH=${HOME}/.rvm/gems/${RUBY_VERSION}/bin
 RUBYGEMS_GLOBAL_PATH=${HOME}/.rvm/gems/${RUBY_VERSION}@global/bin
 
-# Java
+# Java / ANT / TOMCAT
 # TODO: check for java and its path before setting it here
 #CLASSPATH=$CLASSPATH:~/foo/bar.jar
 JAVA_HOME=`/usr/libexec/java_home -v 1.7`
@@ -63,7 +63,7 @@ export JAVA_HOME
 export PYTHONPATH
 
 # source rvm
-# FIXME: is this the correct way/file to do this?
+# FIXME: is this _really_ the correct way/file to do this?
 if test -f ~/.rvm/scripts/rvm; then
     [ "$(type -t rvm)" = "function" ] || source ~/.rvm/scripts/rvm
 fi
