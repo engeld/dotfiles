@@ -32,6 +32,9 @@ shopt -s histappend # append cmds to bash history instead of overwrite
 #PROMPT_COMMAND='prompt_command; history -a' # appends cmds to history every time a promt is shown
 
 # -----
+# Load other stuff™
+# (Don't forget to link them from ~/.dotfiles/some_bash_file to ~/.some_bash_file)
+# -----
 
 # Add bash aliases.
 if [ -f ~/.bash_aliases ]; then
@@ -43,10 +46,12 @@ if [ -f ~/.bash_functions ]; then
     source ~/.bash_functions
 fi
 
+# Add my funky bash-promt 
 if [ -f ~/.bash_promt ]; then
     source ~/.bash_promt
 fi
 
+## Load Autojump.sh
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 ### add Heroku and RVM's Ruby to the path
