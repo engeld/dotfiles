@@ -94,3 +94,8 @@ command -v sha1sum > /dev/null || alias sha1sum="shasum"
 # Pipe my public key to my clipboard.
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 
+####
+# Application Aliases
+######
+
+alias gist='gist -p'
