@@ -21,6 +21,8 @@
 	list-branches = branch -a
 	list-tags     = tag -l 
     list-unpushed = log origin/master..HEAD
+    show-remote-changes = diff HEAD..origin/master
+    show-remote-changelog = log HEAD..origin/master
 
 	l = log --pretty=oneline -n 20 --graph		# view the SHA, description, and history graph of the latest 20 commits
 	lg = !"git lg1"
