@@ -46,3 +46,7 @@ tl;dr: depending on login-shell/non-login-shell, different config-files are load
 * there could be some pitfalls in regards to rights/permissions..?
 
 [1]: http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/engeld/dotfiles/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
