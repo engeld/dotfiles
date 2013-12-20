@@ -19,7 +19,7 @@ function prompt_command {
   let fillsize=${TERMWIDTH}-${TERMWIDTH_FIXED_USED_WIDTH}
 
   if [ "$fillsize" -gt "0" ]; then
-  fill="-----------------------------------------------------------------------------------------------------------------------------"
+  fill="-------------------------------------------------------------------------------------------------------------------------"
     #   It's theoretically possible someone could need more dashes than above, but very unlikely!
     #   The above should be ONE LINE, it may not cut and paste properly
     fill="${fill:0:${fillsize}}"
