@@ -169,7 +169,7 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 defaults write com.apple.dock show-process-indicators -bool true
 
 # Place the OSX Dock in the left corner
-defaults write com.apple.dock pinning -string start
+defaults write com.apple.dock pinning -string middle
 
 # Enable the 2D Dock
 #defaults write com.apple.dock no-glass -bool true
