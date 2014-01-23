@@ -7,38 +7,85 @@ upgrade
 
 # Version Control
 install git
-install git-flow
 install subversion
 install mercurial
+## Helpers / Utilities
+install git-extras
+install git-flow
+install gist
+install ghi
+install hub
 install tig
 
 # Development
-install android-sdk
-install autoconf
-install automake
-install heroku-toolbelt
+## Important Libraries
 install libtool
 install libyaml
-install mongodb
-install mysql
 install neon
-install node
 install openssl
-install phantomjs
 install pkg-config
 install readline
+## Build Tools
+install autoconf
+install automake
+install cmake
+## Languages
+install lua
+install node
+install phantomjs
+## SDKs
+install android-sdk
+install heroku-toolbelt
+## Databases
+install mongodb
+install mysql
 install sqlite
 
 # Networking
 install ssh-copy-id
 install aircrack-ng
+install arp-scan
+install ettercap
+install fping
+install iftop
+install mtr
+install ngrep
+install nmap
+install prips   # print IPs in given range
+install tcpdump
 
 # General CLI Apps
 install antiword
 install aria2
-install htop-osx
+install binwalk
 install byobu
 install cdf
+install curl
+install figlet
+install fortune
+install htop-osx
+install most
+install multitail
+install ncdu
+install pv
+install since
+install the_silver_searcher
+install tmux
+install tpp
+install tree
+install wakeonlan
+install watch
+install wget
+
+# Multimedia
+## Codecs / Encoder
+install faac
+install lame
+install x264
+install xvid
+##
+install ffmpeg
+
 
 # May to install
 # install calcurse # termin manager for console
