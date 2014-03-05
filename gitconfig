@@ -68,6 +68,7 @@
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
 	summary = true
+  tool = colordiff
 [difftool]
 	prompt = true
 [mergetool]
