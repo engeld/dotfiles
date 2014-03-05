@@ -6,15 +6,15 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
+		"Phpcs",
 		"sublimelint",
 		"LESS",
-		"SideBarEnhancements",
-		"RubyTest",
-		"JsFormat",
-		"Vintage",
 		"Oblivion Color Scheme",
-		"Phpcs",
-		"MacTerminal"
+		"Vintage",
+		"JsFormat",
+		"MacTerminal",
+		"RubyTest",
+		"SideBarEnhancements"
 	],
 	"open_files_in_new_window": false,
 	"remember_open_files": false,
