@@ -68,10 +68,17 @@
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
 	summary = true
-  tool = colordiff
+	tool = Kaleidoscope
 [difftool]
-	prompt = true
+	prompt = false
 [mergetool]
-	prompt = true
+	prompt = false
 [push]
 	default = simple
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[diff]
+	tool = Kaleidoscope
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
