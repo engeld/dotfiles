@@ -97,6 +97,7 @@ alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pa
 ######
 
 alias gist='gist -p'
+alias nmap-reachable='nmap -sP'
 
 #####
 # MAC OSX Specific's
