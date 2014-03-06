@@ -6,8 +6,6 @@ upgrade
 
 # Version Control =========================================
 install git
-install subversion16
-install subversion17
 install subversion
 install mercurial
 
@@ -72,7 +70,7 @@ install oniguruma
 # Networking ==============================================
 install arp-scan
 install aircrack-ng
-install ettercap		# sniffer uvm
+install ettercap
 install fping
 install iftop
 install mtr
@@ -91,7 +89,7 @@ install rails-completion
 install dos2unix
 install figlet
 install fortune
-install prips   # print IPs in given range
+install prips
 
 # General CLI Apps ========================================
 install antiword
