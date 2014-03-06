@@ -77,7 +77,7 @@ install mtr
 install ngrep
 install nmap
 install ssh-copy-id
-install tcpdump
+#install tcpdump	# seems no longer available
 
 ## Security
 install sslscan
