@@ -84,6 +84,8 @@ install sslscan
 
 # Make working in the CLI a joy ===========================
 install bash
+
+tap homebrew/completions
 install bash-completion
 install rails-completion
 install dos2unix
