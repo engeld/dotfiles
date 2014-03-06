@@ -1,6 +1,4 @@
 duplicity
-
-
 ghostscript
 gnupg
 gocr
@@ -16,16 +14,12 @@ little-cms2
 lzo
 macvim
 nload
-
 php53
 php53-imagick
-
 ps2eps
 s-lang
 scons
 serf
-
-
 texi2html
 unixodbc
 vnstat
