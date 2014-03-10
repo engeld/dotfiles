@@ -26,7 +26,7 @@ install libevent
 install libgpg-error
 install libidn
 install libksba
-install libmagic
+install libmagic --with-python
 install libnet
 install libpng
 install librsync
@@ -69,6 +69,7 @@ install oniguruma
 
 # Networking ==============================================
 install arp-scan
+install arping
 install aircrack-ng
 install ettercap
 install fping
@@ -99,7 +100,7 @@ install aria2
 install binwalk
 install byobu
 install cdf
-install ncdu			# ncurses disk usage viewer
+install ncdu
 install curl
 install figlet
 install fortune
