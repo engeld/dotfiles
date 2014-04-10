@@ -34,7 +34,7 @@ RUBYGEMS_GLOBAL_PATH=${HOME}/.rvm/gems/${RUBY_VERSION}@global/bin
 # Java / ANT / TOMCAT
 # TODO: check for java and its path before setting it here
 #CLASSPATH=$CLASSPATH:~/foo/bar.jar
-JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+JAVA_HOME=`/usr/libexec/java_home`
 #ANT_HOME=
 #TOMCAT_HOME=
 
