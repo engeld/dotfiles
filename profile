@@ -16,6 +16,9 @@ BREW_PREFIX="${BREW_BIN} --prefix"
 #ZEND_APACHE_BIN_PATH=/usr/local/zend/apache2/bin
 #ZEND_MYSQL_BIN_PATH=/usr/local/zend/mysql/bin
 
+# PHP
+PHP_HOMEBREW_PATH="$(brew --prefix homebrew/php/php54)/bin"
+
 # SYS
 #PKG_CONFIG_PATH=${PREFIX}/lib/pkgconfig:$PKG_CONFIG_PATH
 #LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${PREFIX}/lib
@@ -43,7 +46,8 @@ HOME_BIN_PATH=${PREFIX}/bin      # BIN-PATH of myself
 LOCAL_BIN_PATH=/usr/local/bin       # BIN-PATH of homebrew
 LOCAL_SBIN_PATH=/usr/local/sbin     # SBIN-PATH of homebrew
 
-PATH=$HOME_BIN_PATH:$LOCAL_BIN_PATH:$LOCAL_SBIN_PATH:$RVM_PATH:$RUBY_PATH:$RUBYGEMS_PATH:$RUBYGEMS_GLOBAL_PATH:$PATH
+
+PATH=$HOME_BIN_PATH:$LOCAL_BIN_PATH:$LOCAL_SBIN_PATH:PHP_HOMEBREW_PATH:$RVM_PATH:$RUBY_PATH:$RUBYGEMS_PATH:$RUBYGEMS_GLOBAL_PATH:$PATH
 #MANPATH=
 
 # make system more usable :)
