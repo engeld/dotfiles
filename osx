@@ -19,7 +19,7 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 
 # Disable Notification Center (because yes, I still use Growl!)
 sudo defaults write /System/Library/LaunchAgents/com.apple.notificationcenterui KeepAlive -bool false
-launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
+#launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
 
 #### Menu bar:
 # disable transparency
