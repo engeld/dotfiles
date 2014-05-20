@@ -92,6 +92,7 @@ install rails-completion
 install dos2unix
 install figlet
 install fortune
+install jsonpp
 install prips
 
 # General CLI Apps ========================================
