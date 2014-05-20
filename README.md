@@ -40,6 +40,11 @@ To sum this up:
 
 tl;dr: depending on login-shell/non-login-shell, different config-files are loaded
 
+## TODO's
+* Add script to add all symlinks automatically
+* Add script to prepare a setup automatically
+ * add homebrew & homebrew-cask
+
 ## Pitfalls's (AKA 'Things that may or may not work)  ##
 * if the repository-folder is moved, the symlinks don't work anymore!
  * Solution: don't move the repo-folder!
