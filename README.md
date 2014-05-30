@@ -13,8 +13,8 @@ On a new computer, simply *clone* the repository and run the ''bin/link.sh''.
     $ git clone git@github.com:engeld/dotfiles.git .dotfiles
     $ ~/.dotfiles/bin/link.sh
 
-Add a new dotfile to the repository: `mv ~/.dotfile ~/.dotfiles/dotfile`  
-Link the dotfile from the repo to the homedir: `ln -s ~/.dotfiles/dotfile ~/.dotfile`
+Add a new dotfile to the repository: `mv ~/.dotfile ~/.dotfiles/conf/dotfile`  
+Link the dotfile from the repo to the homedir: `ln -s ~/.dotfiles/conf/dotfile ~/.dotfile`
 
 ### Installation of Sublime-Config ###
 *Make sure you have your old config backed up because this will replace it*
@@ -22,6 +22,9 @@ Link the dotfile from the repo to the homedir: `ln -s ~/.dotfiles/dotfile ~/.dot
     $ cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
     $ rm -r User
     $ ln -s ~/.dotfiles/Sublime/User
+
+### Synchronization of installed homebrew-packages
+Run `$ brew bundle ~/.dotfiles/conf/Brewfile`
 
 ### My current promt
 ![Current Promt](http://i.imgur.com/UDXdZds.png)
