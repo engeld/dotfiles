@@ -7,14 +7,11 @@ light on some of the pitfalls and special files which I use.
 (I currently use those dotfiles on my Mac, it may not work on other OS'es)
 
 ## Installation ##
-On a new computer, simply *clone* the repository.   
+On a new computer, simply *clone* the repository and run the ''bin/link.sh''.
 
     $ cd ~
     $ git clone git@github.com:engeld/dotfiles.git .dotfiles
-    $ ln -s ~/.dotfiles/bashrc ~/.bashrc
-    $ ln -s ~/.dotfiles/profile ~/.profile
-    $ ln -s ~/.dotfiles/bash_profile ~/.bash_profile
-    //and so on..//
+    $ ~/.dotfiles/bin/link.sh
 
 Add a new dotfile to the repository: `mv ~/.dotfile ~/.dotfiles/dotfile`  
 Link the dotfile from the repo to the homedir: `ln -s ~/.dotfiles/dotfile ~/.dotfile`
