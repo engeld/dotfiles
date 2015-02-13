@@ -23,6 +23,18 @@ Link the dotfile from the repo to the homedir: `ln -s ~/.dotfiles/conf/dotfile ~
     $ rm -r User
     $ ln -s ~/.dotfiles/Sublime/User
 
+### Installation of the iTerm Profile
+*Make sure to follow the step outlined here: http://apple.stackexchange.com/questions/111534/iterm2-doesnt-read-com-googlecode-iterm2-plist*
+
+TL;DL:
+
+    1) Quit iTerm & open the Mac Terminal
+    2) Enter the following commands
+    $ defaults delete com.googlecode.iterm2
+    $ cp ~/.dotfiles/conf/iTerm/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
+    $ defaults read com.googlecode.iterm2
+    3) Open iTerm again and enjoy my customized configuration :)
+
 ### Synchronization of installed homebrew-packages
 Run `$ brew bundle ~/.dotfiles/conf/Brewfile`
 
