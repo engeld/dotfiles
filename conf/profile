@@ -17,6 +17,7 @@ BREW_PREFIX="${BREW_BIN} --prefix"
 #ZEND_MYSQL_BIN_PATH=/usr/local/zend/mysql/bin
 
 # PHP
+# TODO: add check if php is even installed before setting this env variable
 PHP_HOMEBREW_PATH="$(brew --prefix homebrew/php/php54)/bin"
 
 # SYS
