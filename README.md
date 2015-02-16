@@ -36,7 +36,7 @@ TL;DL:
     3) Open iTerm again and enjoy my customized configuration :)
 
 ### Synchronization of installed homebrew-packages
-Run `$ brew bundle ~/.dotfiles/conf/Brewfile`
+Run `$ brew brewdle ~/.dotfiles/conf/Brewfile`
 
 ### My current promt
 ![Current Promt](http://i.imgur.com/UDXdZds.png)
