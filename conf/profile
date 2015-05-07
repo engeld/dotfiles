@@ -18,7 +18,7 @@ BREW_PREFIX="${BREW_BIN} --prefix"
 
 # PHP
 # TODO: add check if php is even installed before setting this env variable
-PHP_HOMEBREW_PATH="$(brew --prefix homebrew/php/php54)/bin"
+# PHP_HOMEBREW_PATH="$(brew --prefix homebrew/php/php54)/bin"
 
 # SYS
 #PKG_CONFIG_PATH=${PREFIX}/lib/pkgconfig:$PKG_CONFIG_PATH
