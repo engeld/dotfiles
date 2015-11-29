@@ -11,15 +11,12 @@ fi
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     source $(brew --prefix)/etc/bash_completion
 fi
-if [ -f `brew --prefix`/etc/bash_completion.d/rails.bash ]; then
-    source `brew --prefix`/etc/bash_completion.d/rails.bash
-fi
-if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
-    source `brew --prefix`/etc/bash_completion.d/git-completion.bash
-fi
-if [ -f `brew --prefix`/etc/bash_completion.d/tmux ]; then 
-    source `brew --prefix`/etc/bash_completion.d/tmux
-fi
+
+for file in $(brew --prefix)/etc/bash_completion.d/{.,}*; do 
+  if [ -f $file ]; then
+    source $file;
+  fi
+done
 
 # ============ History ===============
 export HISTCONTROL=ignoredups # avoid succesive dupes in bash history
