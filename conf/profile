@@ -10,12 +10,6 @@ BREW_BIN=`which brew`  # PATH to brew (because PATH is not yet corrected)
 BREW_PREFIX="${BREW_BIN} --prefix"
 
 # ============ Customize ALL THE ENVIRONMENT VARIABLES =============
-# ZEND
-# TODO: check if zend is even installed before setting those variables (is now issue #4)
-#ZEND_BIN_PATH=/usr/local/zend/bin
-#ZEND_APACHE_BIN_PATH=/usr/local/zend/apache2/bin
-#ZEND_MYSQL_BIN_PATH=/usr/local/zend/mysql/bin
-
 # PHP
 # TODO: add check if php is even installed before setting this env variable
 # PHP_HOMEBREW_PATH="$(brew --prefix homebrew/php/php54)/bin"
@@ -26,7 +20,7 @@ BREW_PREFIX="${BREW_BIN} --prefix"
 #LD_RUN_PATH=$LD_RUN_PATH:${PREFIX}/lib
 
 # Python
-PYTHONPATH=${BREW_PREFIX}/lib/python2.7/site-packages
+PYTHON_PATH=/usr/local/opt/python/libexec/bin
 
 # Ruby / RVM
 RUBY_VERSION=ruby-1.9.3-p327
@@ -47,8 +41,7 @@ HOME_BIN_PATH=${PREFIX}/bin      # BIN-PATH of myself
 LOCAL_BIN_PATH=/usr/local/bin       # BIN-PATH of homebrew
 LOCAL_SBIN_PATH=/usr/local/sbin     # SBIN-PATH of homebrew
 
-
-PATH=$HOME_BIN_PATH:$LOCAL_BIN_PATH:$LOCAL_SBIN_PATH:PHP_HOMEBREW_PATH:$RVM_PATH:$RUBY_PATH:$RUBYGEMS_PATH:$RUBYGEMS_GLOBAL_PATH:$PATH
+PATH=$HOME_BIN_PATH:$LOCAL_BIN_PATH:$LOCAL_SBIN_PATH:$PYTHON_PATH:$PATH
 #MANPATH=
 
 # make system more usable :)
@@ -56,7 +49,8 @@ EDITOR=vim
 VISUAL=vim
 #LESSEDIT=
 #PAGER=
-
+#
+export HOMEBREW_GITHUB_API_TOKEN="dbe766db91e9e3d725eeede14ebabc0af8d6c233"
 # ============ Exports (aka activate those customs env variables)  =============
 export PATH
 export PKG_CONFIG_PATH
