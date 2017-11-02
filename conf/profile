@@ -50,7 +50,7 @@ VISUAL=vim
 #LESSEDIT=
 #PAGER=
 #
-export HOMEBREW_GITHUB_API_TOKEN="dbe766db91e9e3d725eeede14ebabc0af8d6c233"
+export HOMEBREW_GITHUB_API_TOKEN=""
 # ============ Exports (aka activate those customs env variables)  =============
 export PATH
 export PKG_CONFIG_PATH
