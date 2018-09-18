@@ -31,7 +31,7 @@ Then you don't have the ssh-keys configured. [Check out Github's guide to genera
 
     $ cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
     $ rm -r User
-    $ ln -s ~/.dotfiles/Sublime/User
+    $ ln -s ~/.dotfiles/conf/Sublime/User
 
 ### Installation of the iTerm Profile
 *Make sure to follow the step outlined here: http://apple.stackexchange.com/questions/111534/iterm2-doesnt-read-com-googlecode-iterm2-plist*
