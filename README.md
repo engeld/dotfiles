@@ -16,6 +16,16 @@ On a new computer, simply *clone* the repository and run the ''bin/link.sh''.
 Add a new dotfile to the repository: `mv ~/.dotfile ~/.dotfiles/conf/dotfile`  
 Link the dotfile from the repo to the homedir: `ln -s ~/.dotfiles/conf/dotfile ~/.dotfile`
 
+### SSH-Keys
+If you encounter the following error message:
+
+    $ git clone git@github.com:engeld/dotfiles.git .dotfiles
+    git@github.com: Permission denied (publickey).
+    fatal: Could not read from remote repository.
+    Please make sure you have the correct access rights and the repository exists.
+    
+Then you don't have the ssh-keys configured. [Check out Github's guide to generating SSH keys or troubleshoot common SSH Problems](https://help.github.com/articles/generating-an-ssh-key/).
+
 ### Installation of Sublime-Config ###
 *Make sure you have your old config backed up because this will replace it*
 
