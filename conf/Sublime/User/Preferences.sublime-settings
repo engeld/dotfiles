@@ -1,24 +1,51 @@
 {
-	"bold_folder_labels": true,
 	"color_scheme": "Packages/RailsCasts Colour Scheme/RailsCastsColorScheme.tmTheme",
+  "font_face": "Source Code Pro",
+  "font_size": 12,
+
+  "bold_folder_labels": true,
 	"draw_white_space": "all",
-	"ensure_newline_at_eof_on_save": true,
 	"hot_exit": false,
-	"ignored_packages":
-	[
-		"Phpcs",
-		"sublimelint",
-		"LESS",
-		"Oblivion Color Scheme",
-		"Vintage",
-		"JsFormat",
-		"MacTerminal",
-		"RubyTest",
-		"SideBarEnhancements"
-	],
 	"open_files_in_new_window": false,
 	"remember_open_files": false,
 	"tab_size": 2,
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+  "rulers":
+  [
+      80
+  ],
+	"trim_trailing_white_space_on_save": true,
+  "ensure_newline_at_eof_on_save": true,
+  "folder_exclude_patterns":
+  [
+      ".svn",
+      ".git",
+      ".DS_Store",
+      "__pycache__",
+      "*.pyc",
+      "*.pyo",
+      "*.exe",
+      "*.dll",
+      "*.obj",
+      "*.o",
+      "*.a",
+      "*.lib",
+      "*.so",
+      "*.dylib",
+      "*.ncb",
+      "*.sdf",
+      "*.suo",
+      "*.pdb",
+      "*.idb",
+      "*.psd"
+  ],
+  "ignored_packages":
+  [
+    "Vintage"
+  ]
+
+  //"auto_complete_delay": 5,
+  //"auto_complete_selector": "source, text",
+  //"create_window_at_startup": false,
+  //"word_wrap": true
 }
