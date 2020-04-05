@@ -49,7 +49,7 @@ TL;DL:
 Run `$ brew brewdle ~/.dotfiles/conf/Brewfile`
 
 ### My current promt
-![Current Promt](http://i.imgur.com/UDXdZds.png)
+![My Current Prompt](https://i.imgur.com/eST972f.png)
 
 ### .bashrc? .bash_profile? .profile? WTF, are you kidding me? ###
 see [this link for the whole story][1]
