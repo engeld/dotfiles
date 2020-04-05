@@ -1,8 +1,7 @@
 Using engeld/dotfiles
 ======================
-In this repository are my dotfiles; pretty standard stuff I guess.
-This file outlines some instructions about setting them up, and shines 
-light on some of the pitfalls and special files which I use.
+In this repository are my dotfiles; configuration files for my shell and other terminal applications.
+This file outlines some instructions about setting them up, and shines light on some of the pitfalls and special files which I use.
 
 (I currently use those dotfiles on my Mac, it may not work on other OS'es)
 
@@ -51,16 +50,8 @@ Run `$ brew brewdle ~/.dotfiles/conf/Brewfile`
 ### My current promt
 ![My Current Prompt](https://i.imgur.com/eST972f.png)
 
-### .bashrc? .bash_profile? .profile? WTF, are you kidding me? ###
-see [this link for the whole story][1]
-
-To sum this up:  
- - `.bash_profile` is executed for *login shells*  
- - `.bashrc` is executed for interactive non-login shells  
- - `.bash_alias` is invoked by my .bashrc and contains all my aliases
- - `.bash_functions` is invoked by my .bashrc as well and contains all my funky functions
-
-tl;dr: depending on login-shell/non-login-shell, different config-files are loaded
+#### Thanks
+Thank you so much, Armin Briegel, for [your article series on migrating from bash to zsh](https://scriptingosx.com/2019/06/moving-to-zsh/).
 
 ## TODO's
 * Add script to add all symlinks automatically
@@ -73,7 +64,4 @@ tl;dr: depending on login-shell/non-login-shell, different config-files are load
 * there could be some pitfalls in regards to rights/permissions..?
 
 [1]: http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/engeld/dotfiles/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
