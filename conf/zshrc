@@ -1,0 +1,99 @@
+## Aliases
+# ============
+
+# Make some possibly destructive commands more interactive.
+alias rm='rm -iv'
+alias mv='mv -iv'
+alias cp='cp -iv'
+
+# Add some easy shortcuts for formatted directory listings.
+alias ll='ls -lhF'
+alias la='ls -ahlF'
+alias ls='ls -hF'
+alias l.='ls -hdF .[a-zA-Z0-9]*' #only show dotfiles
+alias lt='ls -lhaptr' #oldest first sort
+alias labc='ls -lhap' #alphabetical sort
+alias l='clear && pwd && ls -FGl'
+alias u='cd .. && l'
+
+# Shortcuts
+alias box="cd ~/Dropbox"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias dev="cd ~/Dev"
+alias h="history"
+alias j="jobs"
+alias v="vim"
+alias m="mate ."
+alias s="subl ."
+alias o="open"
+alias oo="open ."
+
+# Add some abbreviations because I'm lazy.
+alias :q='exit'
+alias q='exit'
+alias c='clear'
+alias g='git'
+alias gs='git status'
+alias gd='git diff'
+
+# Add some shortcuts for date-related stuff
+alias today='date +"%A, %B %-d, %Y"'
+alias week='date +%V'
+
+# Add some network shortcuts (IP addresses, DNS and so on)
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en1"
+alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
+alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
+
+# Pipe my public key to my clipboard.
+alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
+
+
+## Shell options
+# =============
+
+# Case Insensitive Globbing:
+setopt NO_CASE_GLOB
+setopt GLOB_COMPLETE
+
+# Auto cd
+setopt AUTO_CD
+
+# Shell History
+#HISTFILE=${$HOME}/.zsh_history
+#setopt EXTENDED_HISTORY
+setopt SHARE_HISTORY
+setopt APPEND_HISTORY
+setopt INC_APPEND_HISTORY
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_DUPS
+setopt HIST_FIND_NO_DUPS
+setopt HIST_REDUCE_BLANKS
+
+# Correction
+setopt CORRECT
+setopt CORRECT_ALL
+
+## Shell Prompt
+# =============
+precmd() {
+  PREPROMPT='┌--[] - [] └-> %#'
+  TERMWIDTH_C1=`echo ${PREPROMPT} | wc -c | xargs`
+  TERMWIDTH_C2=`whoami | wc -c | xargs`
+  TERMWIDTH_C3=`hostname -s | wc -c | xargs`
+  TERMWIDTH_C4=`pwd | wc -c | xargs`
+  let fillsize=${COLUMNS}-${TERMWIDTH_C1}-${TERMWIDTH_C2}-${TERMWIDTH_C3}-${TERMWIDTH_C4}
+  if [ "$fillsize" -gt "0" ]; then
+    fill="---------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+    fill="${fill:0:${fillsize}}"
+  fi
+}
+setopt prompt_subst
+NEWLINE=$'\n'
+PROMPT='%B┌--%F{blue}[%n@%m]%f - %F{yellow}[%d]%f $fill [%*]%b'${NEWLINE}'└-> %# '
+#RPROMT='%*'
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
