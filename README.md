@@ -40,7 +40,8 @@ TL;DL:
     1) Quit iTerm & open the Mac Terminal
     2) Enter the following commands
     $ defaults delete com.googlecode.iterm2
-    $ cp ~/.dotfiles/conf/iTerm/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
+    $ mv ~/Library/Preferences/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist.bak
+    $ ln -s ~/.dotfiles/conf/iTerm/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
     $ defaults read com.googlecode.iterm2
     3) Open iTerm again and enjoy my customized configuration :)
 
