@@ -44,6 +44,8 @@ TL;DL:
     $ ln -s ~/.dotfiles/conf/iTerm/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
     $ defaults read com.googlecode.iterm2
     3) Open iTerm again and enjoy my customized configuration :)
+    
+Afterwards, load the color preset "Afterglow" from the repo (in "conf/iTerm/Colorschemes") via iTerm Settings > Profiles > Colors > Color Presets dropdown in the bottom right and then import it.
 
 ### Synchronization of installed homebrew-packages
 Run `$ brew brewdle ~/.dotfiles/conf/Brewfile`
