@@ -1,3 +1,10 @@
+## General
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
+
+
 ## Privat
 Host uberspace engeld
     Hostname eridanus.uberspace.de
