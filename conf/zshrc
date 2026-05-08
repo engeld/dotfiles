@@ -50,10 +50,8 @@ alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 # Pipe my public key to my clipboard.
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 
-
 ## Shell options
 # =============
-
 # Case Insensitive Globbing:
 setopt NO_CASE_GLOB
 setopt GLOB_COMPLETE
@@ -102,12 +100,18 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+## ZSH Autocompletion
 autoload -U +X bashcompinit && bashcompinit
+autoload -Uz compinit
+compinit
 complete -o nospace -C /usr/local/bin/terraform terraform
+
+source <(kubectl completion zsh)
+# Created by `pipx` on 2024-01-13 22:45:13
+export PATH="$PATH:/Users/engeld/.local/bin"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-# Created by `pipx` on 2024-01-13 22:45:13
-export PATH="$PATH:/Users/engeld/.local/bin"
+source /Users/engeld/.config/broot/launcher/bash/br
