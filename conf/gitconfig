@@ -87,3 +87,13 @@
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
+[credential "https://gitlab.com"]
+	provider = gitlab
+[credential]
+	gitLabAuthModes = browser
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[init]
+	defaultBranch = main
+[credential "https://dev.azure.com"]
+	useHttpPath = true
