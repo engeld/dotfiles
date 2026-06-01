@@ -1,0 +1,96 @@
+/*** Styling for TreeStyleTabs **/
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+  display: none;
+}
+
+#main-window[tabsintitlebar="true"]:not([extradragspace="true"]) #TabsToolbar > .toolbar-items {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#main-window:not([tabsintitlebar="true"]) #TabsToolbar {
+    visibility: collapse !important;
+}
+
+#sidebar {
+  min-width: 100px !important;
+}
+
+/*** Megabar Styler General - version 2020-04-19 ***/
+  /*** General Preferences ***/
+  :root {
+    /* Number of pixels of enlargement when URL bar is focused */
+    --mbarstyler-popout-pixels: 0px; /* [0px - 7px] */
+
+    /* Top Bar Display or Not */
+    --mbarstyler-top-bar-display: block; /* [block,none] */
+
+    /* Font sizes (default: 13.8px for title, 10.2px for URL) */
+    --mbarstyler-title-font-size: 13px; /* [13px - 18px] */
+    --mbarstyler-url-font-size: 10px; /* [12px - 16px] */
+
+    /* Rows to show without scrolling */
+    --mbarstyler-max-rows-without-scrolling: 15;
+
+    /* Bottom border for each result row */
+    --mbarstyler-bottom-border-width: 1px; /* [0px or 1px] */
+
+    /* Match display style */
+    --mbarstyler-match-weight: 700; /* [400,700] */
+    --mbarstyler-match-background-opacity: 0.0; /* [0.0,0.05,0.1] */
+    
+    }
+	
+	/*** Font Sizes and Scrolling ***/
+	/* Title font-size */
+	.urlbarView-row .urlbarView-title {
+		font-size: var(--mbarstyler-title-font-size) !important;
+	}
+	
+	/* URL / action font-size */
+	.urlbarView-row .urlbarView-secondary,
+	.urlbarView-row .urlbarView-url,
+	.urlbarView-row .urlbarView-action {
+	font-size: var(--mbarstyler-url-font-size) !important;
+	}
+	
+	/* Set max-height for items visible without scrolling */
+	#urlbarView-results, #urlbar-results {
+	height: unset !important;
+	max-height: calc(2.5 * (var(--mbarstyler-title-font-size) + var(--mbarstyler-bottom-border-width)) * var(--mbarstyler-max-rows-without-scrolling)) !important;
+	}
+	
+	#urlbar-results {
+	overflow-y: auto !important; 
+	}
+	
+	/* Clean up extra spacing at the top and bottom */  
+	#urlbar-results {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	}
+	
+	/* Subtle border between results */
+	.urlbarView-row:not(:last-of-type) {
+	border-bottom: var(--mbarstyler-bottom-border-width) solid rgba(0, 0, 0, 0.1) !important;
+	}
+	
+	/* Match Styling Like Fx43-47 */
+	[lwt-popup-darktext] .urlbarView-row:not([selected]) .urlbarView-title strong,
+	[lwt-popup-darktext] .urlbarView-row:not([selected]) .urlbarView-url strong {
+	font-weight: var(--mbarstyler-match-weight) !important;
+	box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, calc(var(--mbarstyler-match-background-opacity) * 2));
+	background-color: rgba(0, 0, 0, var(--mbarstyler-match-background-opacity));
+	border-radius: 2px;
+	
+	}
+	
+	[lwt-popup-brighttext] .urlbarView-row:not([selected]) .urlbarView-title strong,
+	[lwt-popup-brighttext] .urlbarView-row:not([selected]) .urlbarView-url strong {
+	font-weight: var(--mbarstyler-match-weight) !important;
+	box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, calc(var(--mbarstyler-match-background-opacity) * 2));
+	background-color: rgba(255, 255, 255, var(--mbarstyler-match-background-opacity));
+	border-radius: 2px;
+	}
+
+/*** End of: Megabar Styler General ***/

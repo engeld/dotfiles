@@ -1,3 +1,5 @@
+Include /Users/engeld/.colima/ssh_config
+
 ## General
 Host *
   AddKeysToAgent yes
